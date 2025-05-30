@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - David Alessandro Martínez Valdés</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+
+        .photo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+            border: 3px solid #2c3e50;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name-title {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .institution, .company {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            color: #777;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .degree, .position {
+            margin-bottom: 5px;
+        }
+
+        .description {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        .skills-list li {
+            margin-bottom: 8px;
+            break-inside: avoid;
+        }
+
+        .additional-skills {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item i {
+            margin-right: 8px;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .photo-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .skills-list {
+                columns: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <div class="photo-container">
+                 <img src="1.png" alt="David Alessandro Martínez Valdés">
+                <div class="photo-placeholder">
+                    Tu foto aquí
+                </div>
+                <!-- <img src="tu-foto.jpg" alt="David Martínez"> -->
+            </div>
+            <div class="name-title">
+                <h1 class="name">DAVID ALESSANDRO<br>MARTÍNEZ VALDÉS</h1>
+                <h2 class="title">TÉCNICO EN TIC</h2>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">EDUCACIÓN</h2>
+            
+            <div class="education-item">
+                <div class="date">SEPTIEMBRE 2017 - AGOSTO 2019</div>
+                <div class="institution">UVNE</div>
+                <div class="location">Avenida Manuel Ordoñez, Sta Catarina N.L.</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="date">AGOSTO 2019 – CURSANDO</div>
+                <div class="institution">UTSC</div>
+                <div class="degree">Ingeniería - Área Desarrollo de Software Multiplataforma</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+            
+            <div class="experience-item">
+                <div class="date">3 meses y medio</div>
+                <div class="company">Case Seven Eleven</div>
+                <div class="position">Practicante de Mantenimiento y Soporte de Equipos Informáticos</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="date">2 meses</div>
+                <div class="company">UTSC</div>
+                <div class="position">Tutoriales y Talleres para Nuevos Programadores</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="date">1 año 5 meses</div>
+                <div class="company">7 Eleven</div>
+                <div class="position">Encargado de Tienda y Manejo de Personal</div>
+                <div class="description">Realizando tareas operativas y alzando las ventas por turno</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">HABILIDADES</h2>
+            
+            <ul class="skills-list">
+                <li>Trabajo en equipo</li>
+                <li>Habilidades técnicas</li>
+                <li>Comunicación</li>
+                <li>Dispuesto a aprender</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>Bases de datos</li>
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>Soporte técnico</li>
+                <li>Microsoft Office</li>
+            </ul>
+            
+            <div class="additional-skills">
+                <p>SE USAR UN POCO LA BASE DE DATOS Y REDES, ES DONDE ME GUSTARIA SEGUIR APRENDIENDO, ESTANDO DISPUESTO A APRENDER MUCHO MÁS.</p>
+            </div>
+        </section>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>tuemail@example.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+52 81 1234 5678</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Santa Catarina, N.L.</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Para cargar tu foto, reemplaza el div.photo-placeholder con:
+        // <img src="ruta-de-tu-foto.jpg" alt="Tu nombre">
+        // Asegúrate de que la foto tenga buena calidad y sea cuadrada para mejor resultado
+    </script>
+</body>
+</html>
